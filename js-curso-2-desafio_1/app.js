@@ -44,7 +44,8 @@ let numero = 10;
 function dobraNumero(numero) {
     return numero * 2;
 }
-dobraNumero(numero);
+let resultado1 = dobraNumero(numero);
+console.log(resultado1);
 
 // Criar uma função que recebe três números como parâmetros e retorna a média deles.
 let i = 1;
@@ -53,19 +54,22 @@ let k = 1;
 function media(i, j, k) {
     return (i + j + k) / 3;
 }
-media(i, j, k);
+let resultado2 = media(i, j, k);
+console.log(resultado2);
 
 // Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
 let l = 1
 let m = 2
 function maior(l, m) {
-    return a > b ? a : b;
+    return l > m ? l : m;
 }
-maior(l, m);
+let resultado3 = maior(l, m);
+console.log(resultado3);
 
 // Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
 let n = 5;
 function quadrado(n) {
     return n ** 2;
 }
-let resultado = quadrado(n);
+let resultado4 = quadrado(n);
+console.log(resultado4)

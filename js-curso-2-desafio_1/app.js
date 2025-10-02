@@ -25,3 +25,47 @@ function botaoSoma() {
     let soma = numero1 + numero2;
     alert(`${numero1} + ${numero2} = ${soma}`);
 }
+
+// Criar uma função que exibe "Olá, mundo!" no console.
+function olaMundo() {
+    console.log('Olá, mundo!');
+}
+olaMundo();
+
+// Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+let nome = 'Jaime';
+function olaNome(nome) {
+    console.log(`Olá, ${nome}!`);
+}
+olaNome(nome);
+
+// Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+let numero = 10;
+function dobraNumero(numero) {
+    return numero * 2;
+}
+dobraNumero(numero);
+
+// Criar uma função que recebe três números como parâmetros e retorna a média deles.
+let i = 1;
+let j = 1;
+let k = 1;
+function media(i, j, k) {
+    return (i + j + k) / 3;
+}
+media(i, j, k);
+
+// Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+let l = 1
+let m = 2
+function maior(l, m) {
+    return a > b ? a : b;
+}
+maior(l, m);
+
+// Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+let n = 5;
+function quadrado(n) {
+    return n ** 2;
+}
+let resultado = quadrado(n);

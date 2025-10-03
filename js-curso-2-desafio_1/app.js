@@ -80,14 +80,13 @@ function retornaFatorial(numero) {
         return 1;
     }
 
-    let resultado = numero;
     let fatorial = numero - 1;
 
     while (fatorial > 0) {
-        resultado = resultado * fatorial;
+        numero = numero * fatorial;
         fatorial--;
     }
-    return resultado;
+    return numero;
 }
 
 console.log(retornaFatorial(7));

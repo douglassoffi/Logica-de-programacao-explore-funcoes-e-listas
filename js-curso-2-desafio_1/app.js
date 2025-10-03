@@ -73,3 +73,21 @@ function quadrado(n) {
 }
 let resultado4 = quadrado(n);
 console.log(resultado4)
+
+// Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+function retornaFatorial(numero) {
+    if (numero == 0 || numero == 1) {
+        return 1;
+    }
+
+    let resultado = numero;
+    let fatorial = numero - 1;
+
+    while (fatorial > 0) {
+        resultado = resultado * fatorial;
+        fatorial--;
+    }
+    return resultado;
+}
+
+console.log(retornaFatorial(7));

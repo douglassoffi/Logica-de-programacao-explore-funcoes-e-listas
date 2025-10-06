@@ -1,3 +1,5 @@
+let listaDeNumeros = [];
+let numeroMaximo = 10;
 let numeroSecreto = gerarNumero();
 let tentativas = 1;
 
@@ -34,7 +36,19 @@ function verificarChute() {
 }
 
 function gerarNumero() {
-    return parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroMaximo + 1);
+    let quantidadeDeItens = listaDeNumeros.length;
+
+    if (quantidadeDeItens == numeroMaximo) {
+        listaDeNumeros = [];
+    }
+
+    if (listaDeNumeros.includes(numeroEscolhido)) {
+        return gerarNumero();
+    } else {
+        listaDeNumeros.push(numeroEscolhido);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo() {
